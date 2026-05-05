@@ -3,11 +3,11 @@ using APBD_TEST_TEMPLATE.Repositories;
 
 namespace APBD_TEST_TEMPLATE.Services;
 
-public class ProductsService
+public class ProductService : IProductService
 {
     private readonly IProductRepository _productRepository;
     
-    public ProductsService(IProductRepository productRepository)
+    public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
