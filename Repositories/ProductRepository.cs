@@ -9,7 +9,7 @@ public class ProductRepository : IProductRepository
 
     public ProductRepository(IConfiguration configuration)
     {
-        _connectionString = configuration.GetConnectionString("Default")
+        _connectionString = configuration.GetConnectionString("DefaultConnection")
             ?? throw new InvalidOperationException("No connection string found");
     }
 
