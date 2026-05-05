@@ -74,7 +74,7 @@ public class ProductRepository : IProductRepository
                     product.VendorProducts.Add(new VendorProductResponse
                     {
                         Name = reader.GetString(4),
-                        Amount = reader.GetInt32(5),
+                        Amount = reader.GetInt16(5),
                         PricePerUnit = reader.GetDecimal(6),
                     });
                 }
